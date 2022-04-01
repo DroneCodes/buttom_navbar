@@ -1,5 +1,6 @@
 import 'dart:html';
 
+import 'package:buttom_navbar/chat/chat.dart';
 import 'package:buttom_navbar/home/home.dart';
 import 'package:buttom_navbar/profile/profile.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,6 @@ class _buttomNavbarState extends State<buttomNavbar> {
   final screens = [
     Home(),
     Center(child: Text("Feed", style: TextStyle(fontSize: 60))),
-    Center(child: Text("Chats", style: TextStyle(fontSize: 60))),
     Profile(),
   ];
 
@@ -59,10 +59,6 @@ class _buttomNavbarState extends State<buttomNavbar> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),
                 label: 'Feed',
-                backgroundColor: Colors.green),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.chat),
-                label: 'Chats',
                 backgroundColor: Colors.green),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           ]),

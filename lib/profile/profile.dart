@@ -5,6 +5,7 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.black87,
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -20,7 +21,7 @@ class Profile extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               // ignore: prefer_const_constructors
               child: Center(
-                child: const Text("Love Natural... a song by the reknowned Crystal fighters", style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),),
+                child: const Text("Love Natural... a song by the reknowned Crystal fighters", style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),),
               ),
             )
           ],
